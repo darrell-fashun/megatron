@@ -7,3 +7,8 @@ resource "null_resource" "resource1" {
     command = "curl 'https://hashicorp.com'"
 }
 }
+resource "null_resource" "resource1" {
+    provisioner "local-exec" {
+    command = "curl 'https://hashicorp.com'"
+}
+}
